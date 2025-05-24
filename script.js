@@ -4,7 +4,7 @@ const messages = [
   'Thank u for coming',
   'I love u so much',
   `From the moment i first saw you,
-  I knew my heart would no logger listen to reason.`,
+  I knew my heart would no loger listen to reason.`,
   ,
 ];
 
