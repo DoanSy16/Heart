@@ -159,13 +159,13 @@
       const element = document.createElement('div');
       const rand = Math.random();
 
-      if (rand > 0.95 && images.length > 0) {
+      if (rand > 0.85 && images.length > 0) {
         element.className = 'floating-image';
         const img = document.createElement('img');
         img.src = images[Math.floor(Math.random() * images.length)];
         img.style.width = `${Math.random() * 110 + 50}px`;
         element.appendChild(img);
-      } else if (rand > 0.6) {
+      } else if (rand > 0.7) {
         element.className = 'heart';
         element.textContent = '💗';
         element.style.fontSize = `${Math.random() * 20 + 20}px`;
@@ -185,7 +185,7 @@
       }, 5000);
     }
 
-    setInterval(createFloatingElement, 100);
+    setInterval(createFloatingElement, 150);
 
     document.addEventListener('mousedown', (e) => {
       isDragging = true;
